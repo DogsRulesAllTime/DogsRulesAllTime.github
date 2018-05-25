@@ -10,6 +10,7 @@ body {
     padding: 0;
     margin: 0;
     /* height: auto !important; */
+    background-color: rgb(19, 31, 19);
 }
 
 header {
@@ -22,6 +23,7 @@ header {
     color: white;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -130,7 +132,8 @@ main {
     color: #fff;
     font-family: Helvetica;
     width: 100%;
-    height: 65vmax;
+    min-height: 1080px;
+    /* height: 65vmax; */
     /* height: auto !important; */
 }
 
@@ -139,7 +142,8 @@ main {
     width: 65vmax;
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-bottom: 65px;
 }
 
 .about-img {
@@ -182,6 +186,7 @@ main {
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
+    margin-top: 40px;
 }
 .horizon-background{
     width: 870px;
@@ -195,8 +200,8 @@ main {
     border-radius: 50%;
     background-color: #f20060;
     position: absolute;
-    top: 250px;
-    left: 50px;
+    top: 50px;
+    left: 350px;
     transition: 5s;
     animation: sunAnimation 10s linear 0s 1 ;
 }
@@ -217,19 +222,19 @@ main {
         top: 190px;
         left: 50px;
     }
-    30%{
+    60%{
         top: 80px;
         left: 250px;
     }
-    40%{
+    80%{
         top: 70px;
         left: 300px;
     }
-    50%{
+    100%{
         top: 50px;
         left: 350px;
     }
-    60%{
+    /* 60%{
         top: 70px;
         left: 400px;
     }
@@ -239,9 +244,8 @@ main {
     }
     100% {
         top:  190px;
-        left: 650px;
+        left: 650px; */
     }
-}
 
 .works-paige {
     background-color: black;
@@ -253,12 +257,17 @@ main {
     color: #ffffff;
     font-family: Helvetica;
     font-size: 35px;
-    height: 65vmax;
+    /* height: 65vmax; */
+    /* min-height: 1080px; */
+    min-height: 1234.5px;
+    
 }
 
 .works-container {
     width: 800px;
-    height: 60vmax;
+    /* height: 60vmax; */
+     height: 800px;
+    background-color: rgb(19, 31, 19);
     position: relative;
     margin: 0 auto;
 }
@@ -283,6 +292,7 @@ main {
     background-color: #fff;
     z-index: 1;
     transform: translate(-55%, -40%);
+    transition: 300ms;
 }
 
 .left-screen:hover {
@@ -291,7 +301,9 @@ main {
 
 .contacts-paige {
     width: 100%;
-    height: 65vmax;
+    /* min-height: 1080px; */
+    min-height: 1234.5px;
+    /* height: 65vmax; */
     background-color: #d10081;
     background-image: url(img/bg3.jpg);
     background-position: center;
@@ -308,6 +320,7 @@ main {
 
 .social-items {
     display: flex;
+    flex-wrap: 1;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 60%;
@@ -369,7 +382,9 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 65vmax;
+    /* min-height: 1080px; */
+    min-height: 1234.5px;
+    /* height: 65vmax; */
 }
 
 .skill {
